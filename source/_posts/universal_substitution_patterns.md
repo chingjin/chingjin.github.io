@@ -1,6 +1,7 @@
 ---
 title: Universal Substitution Patterns
-featured_image: 2024/06/22/universal_substitution_patterns/thumbnail.png
+date: 2022-06-22 23:59:21
+featured_image: universal_substitution_patterns/thumbnail.png
 categories:
 - research projects
 tags:
