@@ -1,0 +1,16 @@
+<%
+    function capWords(str) {
+        // we split string by words in an array
+        // and we iterate on each word to capitalize the first letter
+        // and we join each element with a space
+        return str.split(' ').map(function(str) {
+            return str[0].toUpperCase() + str.substr(1).toLowerCase()
+        }).join(' ');
+    }
+%>
+<div id="title"><h1 style="text-align:left"><%-capWords(page.category)%></h1></div>
+<div class="h-line-primary"></div>
+<div id="category">
+  <%- partial('partials/post_gallery') %>
+</div>
+

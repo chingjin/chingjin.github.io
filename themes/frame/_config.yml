@@ -1,0 +1,95 @@
+
+# html lang
+language: en
+color: "#ADD8E6"
+
+# header
+site_brand_name: Ching Jin ｜ Assistant Professor at University of Warwick
+
+logo_image:
+  enable: false
+  image_path: /logo.png # path to your logo image
+
+menu:
+  Home: /
+  Talks: /categories/talks/
+  Research Projects: /categories/research-projects/
+  Publications: /publications/
+  CV: /cv.pdf
+
+# stylesheets loaded in the <head>
+stylesheets:
+- /css/style.css
+
+# scripts loaded in the end of the body
+scripts:
+- /js/menu.js
+
+# favicon
+favicon: /favicon.ico
+
+date_format: MMM D, YYYY
+
+# profile
+profile:
+  title: Ching Jin ｜Assistant Professor
+  subtitle: Centre for Interdisciplinary Methodologies | University of Warwick
+  body: "I am a computational social scientist, who specializes in developing novel computational methodologies by leveraging tools from network science, statistical physics, and artificial intelligence. My work involves applying these methods to large-scale datasets across various domains, including technology, science, and commerce, with the overarching goal of describing, modeling, and predicting social patterns.
+    \n\n
+   My research has resulted in five academic journal publications, including first-authored papers in Nature Human Behaviour (featured on the cover) and Nature Communications. Additionally, my work has been covered in media outlets such as Harvard Business Review and Science Daily.
+   \n\n
+   I am currently an Assistant Professor in Data Science at CIM (Centre for Interdisciplinary Methodologies) at the University of Warwick. I earned my PhD in Physics from Northeastern University, under the supervision of Prof. Dashun Wang and Professor Albert-László Barabási. Following my doctoral studies, I served as a postdoctoral researcher at the Kellogg School of Management and held the role of Associate Director at the Northwestern Institute on Complex Systems (NICO), both at Northwestern University, under the guidance of Professor Brian Uzzi."
+  image: /photo_ChingJin.jpg
+
+  links:
+    Google Scholar: https://scholar.google.com/citations?user=ZV0IS-UAAAAJ
+    Homepage at Warwick: https://warwick.ac.uk/fac/cross_fac/cim/people/ching-jin/
+
+  icons:
+    - { class: "fa-solid fa-envelope", link: "mailto:Ching.jin@warwick.ac.uk", tip: "Mail" }
+    - { class: "fa-brands fa-linkedin", link: "https://www.linkedin.com/in/pianogould/", tip: "LinkedIn" }
+    - { class: "fa-brands fa-square-github", link: "https://github.com/chingjin", tip: "GitHub" }
+
+# footer
+footer:
+  copyright_info:
+    enable: true
+    author: © Ching Jin
+
+  powered_by: # Powered by Hexo & Frame & Designed by Xindi Wang
+    enable: true
+
+  other_info:
+    enable: false
+    content:
+
+# color mode: default / classic / dark
+color_mode: classic
+
+# mathjax setting
+# note: need to install the hexo plugin for math: https://github.com/hexojs/hexo-math
+mathjax_enable: false
+
+# comments: support disqus and valine
+valine: # valine setup guide: https://valine.js.org/quickstart.html
+  enable: false
+  appId: # Your valine app Id
+  appKey: # Your valine app Key
+  lang: 'en'
+  placeholder: 'Say something'
+  avatar: 'mp'
+  meta: ['nick', 'mail']
+
+disqus: # disqus setup guide: https://help.disqus.com/en/articles/1717056-publisher-quick-start-guide
+  enable: false
+  disqus_url: # your diqsuq url or shortname
+  language: 'en'
+
+# local search
+local_search:
+  enable: false
+  place_holder: Search Anything
+  trigger: auto # auto: trigger search whenever input changes
+  top_n_per_article: 1 # show top n results per article, show all results by setting to -1
+  unescape: false # unescape html strings to the readable one
+  preload: false # reload the search data when the page loads, this will accelerate the search process

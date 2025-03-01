@@ -1,0 +1,43 @@
+.post-gallery-list
+    .h-line-secondary
+        margin-top $margin-m-1
+
+    .h-line-secondary:last-child
+        display none
+
+.post-gallery-item-container
+    display flex
+
+.post-gallery-item
+    display flex
+    justify-content center
+    margin-top $margin-primary
+    margin-bottom $margin-m-1
+    width 90%
+    .post-info
+        margin-right $margin-l-0
+        width 80%
+        flex-direction column
+
+        .post-title
+            margin-bottom $margin-m-1
+            text-style(heading-h1)
+
+        .post-date
+            text-style(post-date)
+
+    .post-img
+        width 20%
+
+    a 
+        underline-motion(link)
+    
+@media (max-width: 480px)
+    .post-gallery-item
+        flex-wrap wrap
+        .post-info
+            width 100%
+        .post-img
+            width 100%
+            margin-top $margin-m-1
+

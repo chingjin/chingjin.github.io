@@ -1,0 +1,46 @@
+<script src="https://kit.fontawesome.com/99ef664bf9.js"></script>
+<div class="profile">
+    <div class="profile-image">
+        <% if (theme.profile.image) {%>
+            <img src="<%= url_for(theme.profile.image)%>" alt="featured_image"
+            style="display:block; text-align:center; box-shadow: 10px 10px #000; border: 2px solid #000 !important; transition: all ease-in 0.2s !important;">
+        <% } %>
+            <div class="profile-icons">
+              <% for(const each of theme.profile.icons || []) { %>
+                <% if (!each.class) continue; %>
+                <% var cls = each.class %>
+                <% var color = theme.color %>
+                <span class="span-icons">
+                <a <%= 'href=' + url_for(each.link) %>
+                  <i class="<%= cls %>" aria-hidden="true" style="color:<%= theme.color %>"></i>
+                </a>
+                </span>
+              <% } %>
+
+
+            </div>
+            <div class="post-content" style="text-align:center;margin-top:0em;font-size:16px">
+                <% Object.keys(theme.profile.links).forEach(key => { %>
+            <div class="profile-link">
+                <a href="<%= url_for(theme.profile.links[key])%>"><%=key%></a>
+            </div>
+            <% }); %>
+            </div>
+
+    </div>
+    <div class="post-content profile-content">
+        <div class="profile-title">
+            <%=theme.profile.title%>
+        </div>
+        <div class="profile-subtitle">
+            <%=theme.profile.subtitle%>
+        </div>
+        <div class="profile-body">
+            <% const split = theme.profile.body.split(/\r\n|\n|\r/); %>
+            <% split.forEach(line => { %>
+                <%= line %><br>
+            <% }); %>
+        </div>
+    </div>
+    
+</div>
