@@ -2,3 +2,5 @@ public/
 .DS_Store
 .idea/
 db.json
+themes/.DS_Store
+themes/frame/.DS_Store
