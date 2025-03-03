@@ -1,4 +1,6 @@
-# Install Hexo
+# Basic setup and Install Hexo
+Clone this repository.
+
 Consult [official documentation](https://hexo.io/docs/#Installation) to install hexo. In general, it involves these steps sequentially:
 1. Install `node.js` (see above link for more information)
 2. Install hexo
@@ -65,3 +67,6 @@ featured_image: [title]/[image_file_name]
 
 ### Write contents
 Contents should be filled after the front matter. Follow the basic `markdown` syntax to fill in the contents.
+
+## Deploy
+After making the changes, simply push it to `git` which will automatically trigger new build for the website.
